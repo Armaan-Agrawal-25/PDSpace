@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>View Reservations</title>
+    <link rel="stylesheet" type="text/css" href="static/style.css">
+</head>
+<body>
+    <header class="title-header">
+        <ul class="menu">
+            <a href="{{ url_for('home') }}">Home</a>
+            <a href="{{ url_for('view_reservations') }}">View Reservation</a>
+            <a href="{{ url_for('view_availability') }}">View Availability</a>
+        </ul>
+        <h1>Reservations</h1>
+    </header>
+    <h2>Create or Cancel a Reservation</h2>
+    <div class="btn-style">
+        <button onclick="window.location.href = '/makeReservation';">Make A Reservation</button>
+        <button onclick="window.location.href = '/deleteReservation';">Cancel A Reservation</button>
+    </div>
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Room Number</th>
+                <th>Start Time</th>
+                <th>End Time</th>
+                <th>Date</th>
+                <th>Event ID</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for row in dataframe.itertuples() %}
+                <tr>
+                    <td>{{ row.Name }}</td>
+                    <td>{{ row.Email }}</td>
+                    <td>{{ row.RoomNumber }}</td>
+                    <td>{{ row.StartTime }}</td>
+                    <td>{{ row.EndTime }}</td>
+                    <td>{{ row.Date }}</td>
+                    <td>{{ row.EventID }}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>
