@@ -1,0 +1,150 @@
+.title-header {
+    background-color: #0d2446;
+    padding: 10px;
+    text-align: center;
+    color:  white;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+body {
+    background-color: white;
+    color: #0d2446;
+    font-family: sans-serif;
+    text-align: center;
+}
+
+.footer {
+    background-color: #0d2446;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+h1 {
+    font-size: 20;
+    margin-top: 20px;
+}
+
+h2 {
+    font-size: 10;
+    margin-top: 20px;
+}
+
+h2 p {
+    font-size: 6;
+    margin-top: 20px;
+}
+
+table {
+    margin: 20px auto;
+    background-color: #0d2446;
+    border-collapse: collapse;
+    border-radius: 10px;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    color: white; /* Set text color to white */
+}
+
+tr > td:first-child {
+    color: white;
+}
+
+th {
+    background-color: #0d2446;
+}
+
+tr:nth-child(even) {
+      background-color: #0d2446;
+}
+
+tr:nth-child(odd) {
+    background-color: #1a396b;
+}
+
+.form, form {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+form p {
+    margin-bottom: 10px;
+}
+
+form input[type="text"],
+form input[type="number"],
+form input[type="submit"] {
+    width: 300px;
+    padding: 5px;
+    border: 1px solid #0d2446;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+form input[type="submit"] {
+    background-color: white;
+    color: #0d2446;
+    cursor: pointer;
+}
+
+.btn-style button {
+    background-color: #0d2446;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    font-size: 12px;
+    margin: 4px 2px;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 30px;
+}
+
+.btn-style {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.btn-style button {
+    background-color: #0d2446;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    font-size: 12px;
+    margin: 4px 2px;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 30px;
+}
+
+ul.menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #0d2446;
+    text-align: center;
+}
+
+ul.menu a {
+    float: none; 
+    display: inline-block;
+    color:white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+ul.menu a:hover {
+    background-color: #0d2446;
+}
