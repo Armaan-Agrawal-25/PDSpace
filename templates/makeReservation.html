@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Make A Reservation</title>
+    <link rel="stylesheet" type="text/css" href="static/style.css">
+</head>
+<body>
+    <header class="title-header">
+        <strong><nav>
+            <ul class="menu">
+              <a href="{{ url_for('home') }}">Home</a>
+              <a href="{{ url_for('view_reservations') }}">View Reservation</a>
+              <a href="{{ url_for('view_availability') }}">View Availability</a>
+            </ul>
+         </nav></strong>
+        <h1>Make A Reservation</h1>
+    </header>
+    <form action="/confirmReservation" method="GET">
+        <p>Room Number:
+            <select name="room_number">
+                <option value="1">Library Conference Room #1</option>
+                <option value="2">Library Conference Room #2</option>
+                <option value="3">Library Classroom</option>
+            </select>
+        </p>
+        <p>Start Time:
+          <select name="start_time">
+              <option value="8:00 AM">8:00 AM</option>
+              <option value="8:30 AM">8:30 AM</option>
+              <option value="9:00 AM">9:00 AM</option>
+              <option value="9:30 AM">9:30 AM</option>
+              <option value="10:00 AM">10:00 AM</option>
+              <option value="10:30 AM">10:30 AM</option>
+              <option value="11:00 AM">11:00 AM</option>
+              <option value="11:30 AM">11:30 AM</option>
+              <option value="12:00 PM">12:00 PM</option>
+              <option value="12:30 PM">12:30 PM</option>
+              <option value="1:00 PM">1:00 PM</option>
+              <option value="1:30 PM">1:30 PM</option>
+              <option value="2:00 PM">2:00 PM</option>
+              <option value="2:30 PM">2:30 PM</option>
+              <option value="3:00 PM">3:00 PM</option>
+              <option value="3:30 PM">3:30 PM</option>
+              <option value="4:00 PM">4:00 PM</option>
+              <option value="4:30 PM">4:30 PM</option>
+              <option value="5:00 PM">5:00 PM</option>
+          </select>
+        </p>
+        <p>End Time:
+          <select name="end_time">
+              <option value="8:00 AM">8:00 AM</option>
+              <option value="8:30 AM">8:30 AM</option>
+              <option value="9:00 AM">9:00 AM</option>
+              <option value="9:30 AM">9:30 AM</option>
+              <option value="10:00 AM">10:00 AM</option>
+              <option value="10:30 AM">10:30 AM</option>
+              <option value="11:00 AM">11:00 AM</option>
+              <option value="11:30 AM">11:30 AM</option>
+              <option value="12:00 PM">12:00 PM</option>
+              <option value="12:30 PM">12:30 PM</option>
+              <option value="1:00 PM">1:00 PM</option>
+              <option value="1:30 PM">1:30 PM</option>
+              <option value="2:00 PM">2:00 PM</option>
+              <option value="2:30 PM">2:30 PM</option>
+              <option value="3:00 PM">3:00 PM</option>
+              <option value="3:30 PM">3:30 PM</option>
+              <option value="4:00 PM">4:00 PM</option>
+              <option value="4:30 PM">4:30 PM</option>
+              <option value="5:00 PM">5:00 PM</option>
+          </select>
+        </p>
+        <p>Name (FIRST NAME LAST NAME): <input type="text" name="name"></p>
+        <p>Email: <input type="text" name="email"></p>
+        <p>Date (MM/DD/YY): <input type="text" name="date"></p>
+        <p><input type="submit" value="Reserve"></p>
+    </form>
+</body>
+</html>
