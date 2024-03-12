@@ -9,6 +9,7 @@ Files:
 - main.py: Contains the framework for the application, including creating the Flask web app as well as the different pages within the app
 - functions.py: Contains the different methods that allow the app to function, including the method that allows a user to create and browse listings.
 - templates: Contains the HTML files used to specify the look and design of each specific page, including taking in user input and displaying the listings
+- static: Contains the CSS files for helping include styling in the HTML files
 - availability.csv: Contains a list of the availabilties of each of the library conference rooms
 - reservations.csv: Contains a list of the reservations made by users
 
